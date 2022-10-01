@@ -21,3 +21,7 @@ exports.update = (req, res) => {
 // Delete an Template with the specified id in the request
 exports.delete = (req, res) => {    
 };
+
+// Delete all Templates from the database
+exports.deleteAll = (req, res) => {
+};

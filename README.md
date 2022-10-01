@@ -1,1 +1,62 @@
 # delivery_backend
+## Table of Contents
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
+6. [Postman](#enlaces)
+    GET    - http://localhost:8080
+    POST   - http://localhost:8080/api/items
+    GET    - http://localhost:8080/api/items
+    GET    - http://localhost:8080/api/items/5
+    PUT    - http://localhost:8080/api/items/7
+    GET    - http://localhost:8080/api/items?description=bocata
+    GET    - http://localhost:8080/api/items/actived
+    DELETE - http://localhost:8080/api/items/5
+    DELETE - http://localhost:8080/api/items
+    
+### General Info
+***
+BackEnd del proyecto - Catering Service
+Una app que permitirá gestionar Servicios de Catering de una forma sencilla.
+### Screenshot
+![Image text](http://localhost:8100/login)
+
+## Technologies
+***
+Ionic, Angular, NodeJS
+* [Ionic](https://ionicframework.com/): Version 6.20.1
+* [Angular](https://angular.io/docs): Version 14.2.2
+* [NodeJS](https://nodejs.org/es/): Version v16.15.1
+
+## Installation
+***
+Para poder arrancar el proyecto debes seguir los siguientes pasos:
+
+$ git clone https://github.com/laura-santiago/delivery_backend
+$ cd backend
+$ npm install
+$ node index.js
+
+Side information: To use the application in a special environment use ```lorem ipsum``` to start
+
+## Collaboration
+***
+Si estás interesando en colaborar en la creación y distribución de esta app
+envíame un correo electrónico a loras@gmail.com
+
+## FAQs
+***
+A list of frequently asked questions
+1. **This is a question in bold**
+Answer of the first question with _italic words_. 
+2. __Second question in bold__ 
+To answer this question we use an unordered list:
+* First point
+* Second Point
+* Third point
+3. **Third question in bold**
+Answer of the third question with *italic words*.
+4. **Fourth question in bold**
+| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |

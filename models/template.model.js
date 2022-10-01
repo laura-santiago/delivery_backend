@@ -5,6 +5,10 @@ module.exports = (sequelize, Sequelize) => {
         },
         item_id: {
             type: Sequelize.INTEGER
+        },
+        actived: {
+           type: Sequelize.BOOLEAN
         }
     });
+    return Template;
 };

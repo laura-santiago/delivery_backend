@@ -3,20 +3,26 @@ module.exports = app => {
 
     var router = require("express").Router();
 
-    // Creación de un nuevo item
+    // Creación de un nuevo articulos
     router.post("/", items.create);
 
-    // Recuperar todos los items
+    // Recuperar todos los articulos
     router.get("/", items.findAll);
 
-    // Recuperar un item por su id
+    // Recuperar todos los items activos
+    router.get("/actived", items.findAllActived);    
+
+    // Recuperar un articulos por su id
     router.get("/:id", items.findOne);
 
-    // Actualizamos un item por su id
+    // Actualizamos un articulos por su id
     router.put("/:id", items.update);
 
-    // Eliminamos un item
+    // Eliminamos un articulos
     router.delete ("/:id", items.delete);
+
+    // Eliminamos todos los articulos
+    router.delete("/", items.deleteAll);    
 
     app.use('/api/items', router);
 };

@@ -6,5 +6,6 @@ module.exports = (sequelize, Sequelize) => {
         provider_id: {
             type: Sequelize.INTEGER
         }
-    })
+    });
+    return Item_Provider;
 };

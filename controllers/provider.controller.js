@@ -1,5 +1,5 @@
 const db = require("../models");
-const Provider = db.pro
+const Provider = db.provider;
 const Op = db.Sequelize.Op;
 
 // Create and Save a new Provider
@@ -20,4 +20,8 @@ exports.update = (req, res) => {
 
 // Delete an Provider with the specified id in the request
 exports.delete = (req, res) => {    
+};
+
+// Delete all Providers from the database
+exports.deleteAll = (req, res) => {
 };
