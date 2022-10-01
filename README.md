@@ -1,24 +1,15 @@
-# delivery_backend
+# delivery_frontend
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
-6. [Postman](#enlaces)
-    GET    - http://localhost:8080
-    POST   - http://localhost:8080/api/items
-    GET    - http://localhost:8080/api/items
-    GET    - http://localhost:8080/api/items/5
-    PUT    - http://localhost:8080/api/items/7
-    GET    - http://localhost:8080/api/items?description=bocata
-    GET    - http://localhost:8080/api/items/actived
-    DELETE - http://localhost:8080/api/items/5
-    DELETE - http://localhost:8080/api/items
-    
+4. [Postman](#postman)
+5. [Collaboration](#collaboration)
+6. [FAQs](#faqs)
+
 ### General Info
 ***
-BackEnd del proyecto - Catering Service
+FrontEnd del proyecto - Catering Service
 Una app que permitirá gestionar Servicios de Catering de una forma sencilla.
 ### Screenshot
 ![Image text](http://localhost:8100/login)
@@ -34,12 +25,14 @@ Ionic, Angular, NodeJS
 ***
 Para poder arrancar el proyecto debes seguir los siguientes pasos:
 
-$ git clone https://github.com/laura-santiago/delivery_backend
-$ cd backend
+$ git clone https://github.com/laura-santiago/delivery_frontend
+$ cd frontend
 $ npm install
-$ node index.js
+$ ionic serve 
 
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
+## Postman
+***
+`https://documenter.getpostman.com/view/20375680/2s83tDoCSs`
 
 ## Collaboration
 ***
@@ -60,3 +53,4 @@ To answer this question we use an unordered list:
 Answer of the third question with *italic words*.
 4. **Fourth question in bold**
 | Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
+
