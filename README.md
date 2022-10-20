@@ -1,25 +1,20 @@
 # delivery_backend
 ## Table of Contents
 1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
-6. [Postman](#enlaces)
-    GET    - http://localhost:8080
-    POST   - http://localhost:8080/api/items
-    GET    - http://localhost:8080/api/items
-    GET    - http://localhost:8080/api/items/5
-    PUT    - http://localhost:8080/api/items/7
-    GET    - http://localhost:8080/api/items?description=bocata
-    GET    - http://localhost:8080/api/items/actived
-    DELETE - http://localhost:8080/api/items/5
-    DELETE - http://localhost:8080/api/items
+2. [Screenshot](#screenshot)
+3. [Technologies](#technologies)
+4. [Installation](#installation)
+5. [Postman](#postman)
+6. [Collaboration](#collaboration)
+7. [FAQs](#faqs)
     
 ### General Info
 ***
-BackEnd del proyecto - Catering Service
-Una app que permitirá gestionar Servicios de Catering de una forma sencilla.
+Catering Service BackEnd.
+
+An app that allow you to manage Catering Services in a really simple way!
+It is created using the technologies Ionic + Angular + Express + Sequelize + Multer
+
 ### Screenshot
 ![Image text](http://localhost:8100/login)
 
@@ -32,19 +27,21 @@ Ionic, Angular, NodeJS
 
 ## Installation
 ***
-Para poder arrancar el proyecto debes seguir los siguientes pasos:
+In order to start the project you must follow these steps:
 
 $ git clone https://github.com/laura-santiago/delivery_backend
 $ cd backend
 $ npm install
 $ node index.js
 
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
+## Postman
+***
+`https://documenter.getpostman.com/view/20375680/2s83tDoCSs`
 
 ## Collaboration
 ***
-Si estás interesando en colaborar en la creación y distribución de esta app
-envíame un correo electrónico a loras@gmail.com
+Interested in collaborating in this proyect? Please, send an email to loras@gmail.com
+I'll be glad to tell you how to do it.
 
 ## FAQs
 ***
