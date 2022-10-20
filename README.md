@@ -16,7 +16,7 @@ An app that allow you to manage Catering Services in a really simple way!
 It is created using the technologies Ionic + Angular + Express + Sequelize + Multer
 
 ### Screenshot
-![Image text](http://localhost:8100/login)
+![Image text](http://localhost:8080)
 
 ## Technologies
 ***
