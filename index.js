@@ -1,10 +1,12 @@
 const express = require ("express");
 const cors = require("cors");
 
+var path = require('path');
+
 const app = express();
 
-//Directorio Publico
-app.use( express.static('public'));
+//public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 var corsOptions = {
     origin: "http://localhost:8100"

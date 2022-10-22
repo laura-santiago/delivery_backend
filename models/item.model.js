@@ -8,6 +8,9 @@ module.exports = (sequelize, Sequelize) => {
      },
      actived: {
         type: Sequelize.BOOLEAN
+     },
+     filename: {
+        type: Sequelize.STRING
      }
    }); 
    return Item;
