@@ -6,9 +6,6 @@ module.exports = (sequelize, Sequelize) => {
      price: {
         type: Sequelize.DOUBLE
      },
-     actived: {
-        type: Sequelize.BOOLEAN
-     },
      filename: {
         type: Sequelize.STRING
      }

@@ -22,7 +22,6 @@ app.use(express.urlencoded({ extended: true }));
 //lectura y parseo del body
 //app.use(express.json() );
 
-
 const db = require("./models");
 
 // OPCION A - BBDD creada, intentamos sincronización.

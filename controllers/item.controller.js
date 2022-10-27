@@ -16,7 +16,6 @@ exports.create = (req, res) => {
     const item = {
         description: req.body.description,
         price: req.body.price,
-        actived: req.body.actived ? req.body.actived : false,
         filename: req.file ? req.file.filename : ""
     };
 
