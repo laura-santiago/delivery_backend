@@ -1,29 +1,27 @@
 module.exports = app => {
     const items = require("../controllers/item.controller.js");
     var upload = require('../multer/upload');
+    const auth = require("../controllers/auth.js");
 
     var router = require("express").Router();
 
     // Creación de un nuevo articulos
-    router.post("/", upload.single('file'), items.create);
+    router.post("/", auth.isAuthenticated, upload.single('file'), items.create);
 
     // Recuperar todos los articulos
-    router.get("/", items.findAll);
-
-    // Recuperar todos los items activos
-    router.get("/actived", items.findAllActived);    
+    router.get("/", auth.isAuthenticated, items.findAll);
 
     // Recuperar un articulos por su id
-    router.get("/:id", items.findOne);
+    router.get("/:id", auth.isAuthenticated, items.findOne);
 
     // Actualizamos un articulos por su id
-    router.put("/:id", items.update);
+    router.put("/:id", auth.isAuthenticated, items.update);
 
     // Eliminamos un articulos
-    router.delete ("/:id", items.delete);
+    router.delete ("/:id", auth.isAuthenticated, items.delete);
 
     // Eliminamos todos los articulos
-    router.delete("/", items.deleteAll);    
+    router.delete("/", auth.isAuthenticated, items.deleteAll);    
 
     app.use('/api/items', router);
 };

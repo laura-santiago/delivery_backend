@@ -7,7 +7,7 @@ exports.create = (req, res) => {
     // Validate request
     if (!req.body.description) {
         res.status(400).send({
-            message: " Debe especificar la descripcion del articulo"
+            message: " Item description must be detail."
         });
         return;
     }
@@ -27,7 +27,7 @@ exports.create = (req, res) => {
     .catch(err => {
         res.status(500).send({
             message: 
-              err.message || "Ups! algo ocurrió mientras se creaba el item."
+              err.message || "Ups! Some error occurred while creating the item."
         });
     });
 };
@@ -46,24 +46,10 @@ exports.findAll = (req, res) => {
         console.log("Llegamos al catch",err);
         res.status(500).send({
             message:
-              err.message || "Oh! Oh! algo ocurrió mientras recibíamos los items."
+              err.message || "Oh! Oh! Some error occurred while retrieving the items."
         });
      });
 };
-
-// Retrive all Items Actived from the database (with condition)
-exports.findAllActived = (req, res) => {
-    Item.findAll({ where: { actived: true } })
-      .then(data => {
-        res.send(data);
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-            err.message || "Oh! Oh! algo ocurrió mientras recibíamos los items activos."
-        });
-      });
-  };
 
 // Find a single Item with an id
 exports.findOne = (req, res) => {  
@@ -75,13 +61,13 @@ exports.findOne = (req, res) => {
             res.send(data);
         } else {
             res.status(404).send({
-                message: `No se ha encontrado el Articulo con id=${id}`
+                message: `It was no possible to find the Item with id=${id}`
             });
         }
      })
      .catch ( err => {
         res.status(500).send({
-            message: `Oh! Oh! algo ocurrió al intentar recuperar el Articulo con id=${id}`
+            message: `Oh! Oh! Some error occurred while retrieving the item with id=${id}`
         });
      });
 };
@@ -96,21 +82,21 @@ exports.update = (req, res) => {
       .then(num => {
         if (num == 1) {
             res.send ({
-               message: "Articulo actualizado satisfactoriamente." 
+               message: "Item successfully updated." 
             });
         } else {
             console.log("error en el else ");
             console.log("num = ", num);
             console.log("req.body ",req.body);
             res.send ({
-               message: `No se pudo actualizar el articulo con id = ${id}. Quizás el articulo no fue encontrado o req.body esta vacio!`
+               message: `It was no possible to update the Item with id = ${id}`
             });
         }
       })
       .catch (err => {
           console.log("error: ",err);
           res.status(500).send({
-            message: `Oh! Oh! algo ocurrió al intentar actualizar el Articulo con id=${id}`
+            message: `Oh! Oh! Some error occurred while updating the Item with id=${id}`
           });
       });
 };
@@ -125,17 +111,17 @@ exports.delete = (req, res) => {
     .then(num => {
       if (num == 1) {
         res.send({
-            message: "Articulo eliminado satisfactoriamente."
+            message: "Article removed successfully."
         });
       } else {
         res.send({
-            message: `Oh! Oh! algo ocurrió al intentar eliminar el Articulo con id=${id}`
+            message: `Oh! Oh! Some error occurred while removing the Item with id=${id}`
         });
       }
     })
     .catch(err => {
         res.status(500).send({
-          message: `Oh! Oh! algo ocurrió al intentar eliminar el Articulo con id=${id}`
+          message: `Oh! Oh! Some error occurred while removing the Item with id=${id}`
         });
     });
 };
@@ -147,11 +133,11 @@ exports.deleteAll = (req, res) => {
      truncate: false
     })
     .then(nums => {
-        res.send({ message: `${nums} Articulos fueron eliminados satisfactoriamente.`});
+        res.send({ message: `${nums} All articles were removed successfully.`});
     })
     .catch(err => {
         res.status(500).send({
-            message: "Oh! Oh! algo ocurrió al intentar eliminar todos los Articulos."
+            message: "Oh! Oh! Some error occurred while removing all the Items."
           });
     });
 };

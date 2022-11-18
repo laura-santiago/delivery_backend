@@ -1,4 +1,5 @@
-# delivery_backend
+# Ionic (frontend) and NodeJs (backend) Using Basic Authentication
+
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Screenshot](#screenshot)
@@ -15,11 +16,19 @@ Catering Service BackEnd.
 An app that allow you to manage Catering Services in a really simple way!
 It is created using the technologies Ionic + Angular + Express + Sequelize + Multer
 
+![screenshots](https://github.com/tcrurav/Ionic5NodeAuthBasic/blob/master/screenshots/cubiertos_fondo_naranja.png)
+
 ### Screenshot
 ![Image text](http://localhost:8080)
 
 ## Technologies
 ***
+
+You need a working environment with:
+* [Git](https://git-scm.com) - You can install it from https://git-scm.com/downloads.
+* [MySQL](https://www.mysql.com) - You can install it from https://www.mysql.com/downloads/.
+* [Node.js](https://nodejs.org) - Install node.js from https://nodejs.org/es/download/. It's advisable to install the LTS version.
+
 Ionic, Angular, NodeJS
 * [Ionic](https://ionicframework.com/): Version 6.20.1
 * [Angular](https://angular.io/docs): Version 14.2.2
